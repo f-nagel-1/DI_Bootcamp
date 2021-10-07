@@ -1,0 +1,111 @@
+pseudo class selectors
+------
+
+
+:hover
+input:focus
+-> focus on input when have a form for tping
+
+
+input:Required
+-> focus on input when required. color repeated
+
+
+HELPS STYLE AN ELEMENT WHEN IT IS IN A SPECIAL STATE
+
+
+html
+
+<form>
+    <label for="name"></label>
+    <input for="text" id="name" name="uname" required>
+    <label for="user_pass">Password</label>
+    <input type="password" id="user_pass" name="u_pass" />
+</form>
+
+
+!!! important that label for "name" is the same as ID under input id="name"
+because it links them together
+
+
+-
+here checked means that cat is checked per default
+
+<form>
+    <input type="radio" id="cat" name="pet" value="cat" checked />
+    <label for="cat">Cat</label>
+    <input type="radio" id="dog" name="pet" value="dog" />
+    <label for="dog">Cat</label>
+
+</form>
+
+---
+radio
+
+INPUTS all need to have the same name! Here "pet" so that only 1 option can be selected. it groups them into a category
+
+
+
+
+<form>
+    <input type="checkbox" name="my-checkbox-in" id="check_in" />
+    <label for="check_in">Check In</label>
+    <input for="text" id="name" name="uname" required>
+    <label for="user_pass">Password</label>
+    <input type="password" id="user_pass" name="u_pass" />
+</form>
+
+
+
+SELECT!!!
+
+
+<form>
+    <select name="select_fruits" id="fruit">
+        <option value="apples">Appkes</option>
+        <option value="oranges">Oranges</option>
+    </select>
+</form>
+
+
+css:
+form:hover{
+    outline: 0;
+    background-color: blue;
+}
+
+
+input:requred{
+    border: 1 px solid red;
+}
+
+
+css selectors reference:
+ in css the "+"
+ selects immidiate sibling
+
+
+----
+Position/Number based pseudo class selectors
+
+div h2:first-child{
+    color: blue;
+}
+
+div h2:nth-child(3){
+    color:red;
+}
+
+nth-child 3 - number 3 defines the number of the child you want to give that MYOWNBUTTONCOLOR
+
+
+
+---
+ATTRIBUTE selectors
+
+if not checked, then label on checkbox will be white:
+
+
+input[type="checkbox"]:not(:checked) + label{
+    color: white
+}

@@ -1,0 +1,30 @@
+.boxes{
+    height: 700px;
+    width: 900px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.red{
+    background-color: red;
+    border: 3px solid black;
+
+}
+
+.blue{
+    background-color: blue;
+    border: 3px solid black;
+}
+
+.yellow{
+    background-color: yellow;
+    /* start at 1, and span 2 because it spans over another one column taking up both 2 columns */
+    grid-column: 1 / span 2;
+    border: 3px solid black;
+
+
+}

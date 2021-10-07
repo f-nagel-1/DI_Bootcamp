@@ -1,0 +1,66 @@
+.gridarea{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    display: grid;
+    width: 80%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: "header header header"
+                            "menu main main"
+                            "menu main main"
+                            "menu main main"
+                            "left main main"
+                            "left main main"
+                            "left right right"
+                            "left right right"
+                            "reim reim repo"
+                            "reim reim repo"
+                             "footer footer footer" ;
+
+}
+
+.header{
+    background-color: blue;
+    grid-area: header;
+
+}
+
+.hero{
+    grid-area: menu;
+    background-color: grey;
+
+}
+
+.main{
+    grid-area: main;
+    background-color: orange;
+
+}
+
+.sidebar{
+    grid-area: left;
+    background-color: lightgreen;
+
+}
+
+.extra{
+    grid-area: right;
+    background: darkgrey;
+}
+
+.images{
+    grid-area: reim;
+    background: pink;
+}
+
+.posts{
+    grid-area: repo;
+    background: purple;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: green;
+}

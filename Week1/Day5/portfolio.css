@@ -1,0 +1,26 @@
+/* .navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+} */
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.card{
+    background-color: #7D8AFF;
+}
+
+.btn{
+    background-color: #6A6A6B;
+}
+
+.btn{
+    color: white;
+}
+
+
+*{
+    font-family: 'Lato', sans-serif;
+}

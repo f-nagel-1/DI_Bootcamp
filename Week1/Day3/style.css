@@ -1,0 +1,44 @@
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 900px;
+    background-color: white;
+    color: white;
+    border: 5px solid red;
+    padding: 2px;
+    text-align: center;
+}
+
+.firstblock{
+    border: 2px black solid;
+    height: 20%;
+    background-color: lightblue;
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 70px 0;
+    align-items: center;
+
+}
+
+.secondblock{
+    border: 2px black solid;
+    height: 60%;
+    width: 60%;
+    align-self: center;
+    background-color: lightblue;
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 70px 0;
+}
+
+.thirdblock{
+    border: 2px black solid;
+    height: 20%;
+    background-color: lightblue;
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 70px 0;
+
+}

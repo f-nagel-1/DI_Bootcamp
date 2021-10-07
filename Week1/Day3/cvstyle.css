@@ -1,0 +1,110 @@
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing:border-box;
+
+}
+
+
+section{
+    /* height: 900px; */
+    /* width: 900px; */
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: 1fr 2fr;
+    /* padding: 0; */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border: 10px outset #838384;
+    /* margin: 0; */
+
+
+
+
+}
+/* once hits 400px, then resets the column size to initial which is 1, so everything goes into one column, one on top of the other */
+@media all and (max-width: 400px) {
+  section {
+      grid-template-rows: 1fr 2fr;
+      grid-template-columns:initial;
+  }
+}
+
+
+.description{
+    text-align: center;
+    /* grid-row: 1 / span 4; */
+    background-color: #24137E;
+    position: relative;
+    color: white;
+    box-sizing:border-box;
+    margin: 0;
+
+}
+
+
+.desccenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.description img{
+    height: 150px;
+    border-radius: 50%
+}
+
+.description p{
+    font-size: 5vm;
+}
+
+
+.inforight {
+    display: flex;
+    flex-direction: column;
+}
+
+.inforight > div {
+padding: 10px;
+}
+
+
+.inforight hr.stylehr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+/* .profile{
+    padding: 10px;
+}
+
+.job{
+    padding: 10px;
+
+} */
+
+.job p:first-of-type {
+    font-weight: bold;
+}
+
+/* .education{
+    padding: 10px;
+} */
+
+.education p:first-of-type {
+    font-weight: bold;
+}
+
+.skills ul{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+
+}
