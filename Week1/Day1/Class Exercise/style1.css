@@ -1,0 +1,12 @@
+p{
+    background-color: green;
+    color: darkblue;
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
+}
+
+body{
+    background-image:image();
+}

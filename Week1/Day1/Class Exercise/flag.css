@@ -1,0 +1,21 @@
+.flag {
+  display: flex;
+  width: 291px;
+  height: 180px;
+}
+
+.third {
+  flex: 1 1 33%;
+}
+
+.ireland .left {
+  background-color: green;
+}
+
+.ireland .center {
+  background-color: white;
+}
+
+.ireland .right {
+  background-color: orange;
+}

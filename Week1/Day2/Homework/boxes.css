@@ -1,0 +1,32 @@
+#parent{
+    position: relative;
+}
+
+.greybox{
+    width: 700px;
+    height: 300px;
+    background-color: grey;
+    margin: 30px;
+}
+
+.bluebox{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.orangebox{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+di
+
+
+
+}

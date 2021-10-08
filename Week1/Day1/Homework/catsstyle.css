@@ -1,0 +1,25 @@
+h3, ul{
+    padding-left: 100px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.border {
+    border-style: solid;
+    color: red;
+    text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.middle{
+    margin-left: auto;
+    margin-right: auto;
+  }

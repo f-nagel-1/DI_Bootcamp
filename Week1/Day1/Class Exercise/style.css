@@ -1,0 +1,29 @@
+h2 {
+    color:purple;
+    background-color: pink;
+    border: 4px solid green;
+}
+
+.title {
+    color:yellow;
+    border: 4px solid orange;
+    background: purple;
+}
+
+#hello{
+    color: red;
+}
+
+/*h1,p{
+    background-color: blue;
+}
+
+div p{
+    color: red;
+}*/
+
+/* with > selection of only direct child not grandchild*/
+.container > p{
+    color: black;
+    background-color: white;
+}
