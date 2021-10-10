@@ -31,9 +31,14 @@ let calc = (prompt("What do you want to do? + - / or *"));
 if (calc === "+") {
     alert(num1 + num2);
 }
-else if (calc === "*") {
-    alert(num1 * num2);
-}
-else  {
+else if (calc === "-") {
     alert(num1 - num2);
+}
+
+else if (calc === "/") {
+    alert(num1 / num2);
+}
+
+else  {
+    alert(num1 * num2);
 }
