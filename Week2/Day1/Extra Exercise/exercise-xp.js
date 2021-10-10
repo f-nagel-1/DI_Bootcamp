@@ -1,0 +1,13 @@
+5 + "34"  =     534
+5 - "4" =     invalid
+10 % 5  =       0
+5 % 10  =       invalid
+"Java" + "Script"  = JavaScript
+" " + " "  = "  "
+" " + 0  = " 0"
+true + true  = true
+true + false  = false
+false + true  = false
+false - true   = invalid ?
+ 3 - 4   = -1
+"Bob" - "bill" = invalid
