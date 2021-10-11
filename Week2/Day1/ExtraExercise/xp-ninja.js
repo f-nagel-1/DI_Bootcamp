@@ -1,3 +1,5 @@
+///Exercise 1
+
 let sentence = prompt("Give me a sentence");
 let keyword = "nemo";
 
@@ -9,3 +11,6 @@ if (sentence.includes(keyword)) {
 else  {
     alert("I cant find Nemo");
 }
+
+
+//Exercise 3
