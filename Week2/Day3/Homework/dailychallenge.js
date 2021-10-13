@@ -10,3 +10,12 @@ for (let i = 0; i < num; i++){
     str = str + "*";
     console.log(str)
 }
+
+=====
+
+
+let X = "";
+
+for (let i = 0; i < 5; i++){
+
+}
