@@ -148,14 +148,20 @@ let sum = 0;
 
 function myBill(){
     // goes through each element in the array => get banana = 0
-    for (let i = 0; i < shoppingList.length; i++){
-        //if it is bigger than 0, then loop over second object to check the key value pair
-        for (let i in stock){
-            if (stock[i] > 0){
-                sum += prices[i];
-            }
-        }
-    }return sum;
+
+    //(let i = 0; i < shoppingList.length; i++){
+
+    for (let fruit of shoppingList)
+    // (let i = 0; i < shoppingList.length; i++)
+    {
+        if (fruit in stock && stock[fruit] > 0){
+                sum += prices[fruit];
+            };
+
+    }console.log(sum);
+
+
+    // return sum;
 
 
 }
@@ -186,7 +192,7 @@ let numberNights = parseInt(prompt("number of nights in the hotel?"))
 let sumNights;
 
 function hotelCost(){
-    while (numberNights.length === 0){
+    while (isNaN(numberNights)){
         numberNights = prompt("number of nights in the hotel?")
     }
     let sumNights = (numberNights * 140)

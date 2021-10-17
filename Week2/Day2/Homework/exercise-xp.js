@@ -83,5 +83,5 @@ if (countNumber === 0){
 } else if (countNumber === 2){
     console.log(users[1], "is online")
 } else {
-    console.log(users[0], users[1], "and 2 more users are online")
+    console.log(`${users[1]}, ${users[2]}, and ${users.length-2} more users are online`)
 }
