@@ -2,7 +2,7 @@ let inputs = document.getElementsByTagName('input');
 
 let button = document.getElementById("lib-button");
     button.addEventListener("click", addInputs);
-    button.addEventListener("click", storyTime);
+
 
 let arrWords = [];
 
@@ -22,10 +22,16 @@ function addInputs(event){
     console.log(arrWords);
 
 
-}
+    let storyParagraph = document.createElement("p");
 
-function storyTime(event){
-    let story = document.createElement("p");
+    for (let i = 0; i < arrWords.length; i++){
+        // let text = document.createTextNode(arrWords[i]);
+        let spanElement = document.getElementById("story");
+
+        storyParagraph.innerHTML =
+        "The" + " " + adjective + " " + noun + " told " + person + " to " + verb + " in " + place ;
+       spanElement.appendChild(storyParagraph);
+    }
 
 }
 
