@@ -1,0 +1,37 @@
+<!-- ## HTML
+* 2 sections : 1 for the pallet and 1 for the painting area
+
+
+## CSS
+* the main section using flex, flex-direction: row, sizes to be 1/4 and 3/4
+
+* FIRST SECTION
+The first section: 8 ROWS and 3 COLUMNS : grid, for the button use span. Some gap between rows and columns, we add a color to each square. Each square needs a black border
+
+* SECOND SECTION
+The section is using grid: 60 columns and 24 rows, gap, each square is white. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Drawing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="colorPicker">
+            <div class="button">Clear</div>
+            <div id="grid-container">
+
+            </div>
+        </section>
+
+        <section id="drawingArea"></section>
+    </div>
+
+    <script src="picker.js"></script>
+</body>
+</html>
