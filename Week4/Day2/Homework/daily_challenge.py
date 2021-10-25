@@ -15,14 +15,30 @@ side = "|"
 happy_str = "happy"
 n = 1 
 chunks = [happy_str[i:i+n] for i in range(0, len(happy_str), n)]
-new_line = " : ".join(chunks)
+new_line = ":".join(chunks)
 
 
 underline = "_" * (len(new_line))
-roof = "^" * (len(new_line)+8) 
+roof = "^" * (len(new_line)+10) 
+
+birthday_str = "Birthday"
+n = 1 
+parts = [birthday_str[i:i+n] for i in range(0, len(birthday_str), n)]
+birthday_line = ":".join(parts)
+full_length = len(birthday_line)
 
 
-print("     ", top * 3 , number_is, top * 3, "   ")
-print("    ", side, new_line, side, "   ")
-print(" ", top, side, underline, side, top, " ")
-print (side, roof, side)
+underline = "_" * (full_length + 2)
+roof = "^" * full_length
+line_short = len(underline) - 8
+underline_short = "_" * line_short
+spaces = " " * full_length
+bottom = "~" * (full_length + 4)
+
+print("   ", top, number_is, top)
+print("  ", side, new_line, side, "  ")
+print(top, side, underline_short, side, top)
+print(side, roof, side)
+print(side, birthday_line,side)
+print(side, spaces, side)
+print(bottom)
