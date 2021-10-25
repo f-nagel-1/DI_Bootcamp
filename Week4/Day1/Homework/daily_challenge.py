@@ -5,12 +5,14 @@
 # Then, print the first and last characters of the given text.
 
 user_input = input("please give me a 10 letter word\n")
-if len(user_input) < 10:
-    print("too short")
-elif len(user_input) > 10:
-    print("too long")
-else:
-    print("this is the first letter of your word:\n", user_input[0], "\n and this is the last letter of your word:\n", user_input[-1])
+
+while len(user_input) < 10 or len(user_input) > 10:
+    if len(user_input) < 10:
+        print("too short")
+    elif len(user_input) > 10:
+        print("too long")
+    else:
+        print("this is the first letter of your word:\n", user_input[0], "\n and this is the last letter of your word:\n", user_input[-1])
 
 
 # Construct the string character by character: Print the first character, then the second, then the third, until the full string is printed. For example:
@@ -34,5 +36,4 @@ while i < len(user_input):
 import random
 scrambled = list(user_input)
 random.shuffle(scrambled)
-scrambled = "".join(scrambled)
-print(scrambled)
+print("".join(scrambled))
