@@ -40,4 +40,59 @@ for person, age in family.items():
 print("the cost of your tickets is: ", total_sum) 
 
 
-//
+//# 3
+
+brand = {
+    "name": "Zara",
+    "creation_date": 1975,
+    "creator_name": "Amancio Ortega Gaona", 
+    "type_of_clothes": ["men", "women", "children", "home"],
+    "international_competitors": ["Gap", "H&M", "Benetton"], 
+    "number_stores": 7000,
+    "major_color": {
+        "France": "blue", 
+        "Spain": "red", 
+        "US": ["pink", "green"],
+    }
+}
+
+
+more_on_zara = {
+    "creation_date" : 1975,
+    "number_stores" : 10000,
+}
+
+
+brand["number_stores"] = 2
+
+# print("Zaras clients are:", brand["type_of_clothes"][0], "," , brand["type_of_clothes"][1], "," , brand["type_of_clothes"][2])
+
+#5
+brand["country_creation"] = "Spain"
+
+#6
+
+if "international_competitors" in brand:
+    brand["international_competitors"].append("Desigual")
+
+#7
+brand.pop("creation_date")
+
+#8
+print(brand["international_competitors"][-1])
+
+#9
+print(brand["major_color"]["US"])
+
+# 10. 
+print(len(brand))
+
+# 11. 
+
+for key, value in brand.items():
+    print(value)
+
+# . Use a method to add the information from the dictionary more_on_zara to the dictionary brand.
+
+brand.update(more_on_zara)
+print(brand)
