@@ -96,3 +96,9 @@ for key, value in brand.items():
 
 brand.update(more_on_zara)
 print(brand)
+
+
+#4
+
+users = [ "Mickey", "Minnie", "Donald","Ariel","Pluto"]
+
