@@ -9,14 +9,14 @@ from xp import Dog
 
 class PetDog(Dog):
     def __init__(self, name, age, weight):
-        super().__init__(self, trained=False)
+        super().__init__(self, name, age, weight, trained=False)
 
     def train(self):
         print(self.bark())
         self.trained = True
 
-    def play(self):
-        #no idea what goes on here
+    # def play(self):
+    #     #no idea what goes on here
 
 
 # nothing works. no idea why
