@@ -1,0 +1,1 @@
+copy public."students" from 'C:\Users\Fenriz\Desktop\DI\HTML\DI_Bootcamp\Week6\Day1\Homework\list.csv' DELIMITER ',' CSV HEADER;
