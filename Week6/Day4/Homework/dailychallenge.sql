@@ -34,7 +34,7 @@
 --end;
 --$pricecalculation$ language plpgsql;
 
-nb
+bonus:
 
 --select * from total_price(1);
 
